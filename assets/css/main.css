@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /*
 	Identity by HTML5 UP
@@ -111,15 +112,8 @@
 
 	body {
 		height: 100%;
-		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-repeat: repeat,			no-repeat,			no-repeat;
-		background-size: 100px 100px, cover,				cover;
-		background-position: top left,		center center,		bottom center;
-		background-attachment: fixed,			fixed,				fixed;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(40,55,71,1) 100%);
 	}
 
 		body:after {
@@ -132,18 +126,8 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-repeat: repeat,			no-repeat;
-			background-size: 100px 100px, cover;
-			background-position: top left,		center center;
-			-moz-transition: opacity 1.75s ease-out;
-			-webkit-transition: opacity 1.75s ease-out;
-			-ms-transition: opacity 1.75s ease-out;
-			transition: opacity 1.75s ease-out;
+			background: rgb(0,0,0);
+			background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(40,55,71,1) 100%);
 		}
 
 		body.is-preload:after {
@@ -154,11 +138,10 @@
 
 	body, input, select, textarea {
 		color: #414f57;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Open Sans", sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 2;
-		letter-spacing: 0.2em;
 		text-transform: uppercase;
 	}
 
@@ -209,6 +192,7 @@
 
 	p {
 		margin: 0 0 1.5em 0;
+		text-transform: none;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -224,7 +208,7 @@
 
 	h1 {
 		font-size: 1.85em;
-		letter-spacing: 0.22em;
+		letter-spacing: 0.12em;
 		margin: 0 0 0.525em 0;
 	}
 
@@ -931,6 +915,7 @@
 		}
 
 			#main .avatar img {
+				max-width: 50%;
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
@@ -988,7 +973,7 @@
 		#footer .copyright {
 			margin: 0;
 			padding: 0;
-			font-size: 0.9em;
+			font-size: 0.3em;
 			list-style: none;
 		}
 
